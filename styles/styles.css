@@ -1,0 +1,911 @@
+/* ProximaNova */
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNovaT-Thin.eot');
+	src: local('Proxima Nova Thin'), local('ProximaNovaT-Thin'),
+		url('../fonts/ProximaNova/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNovaT-Thin.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNovaT-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-ThinIt.eot');
+	src: local('Proxima Nova Thin Italic'), local('ProximaNova-ThinIt'),
+		url('../fonts/ProximaNova/ProximaNova-ThinIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-ThinIt.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-ThinIt.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-Light.eot');
+	src: local('Proxima Nova Light'), local('ProximaNova-Light'),
+		url('../fonts/ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-LightIt.eot');
+	src: local('Proxima Nova Light Italic'), local('ProximaNova-LightIt'),
+		url('../fonts/ProximaNova/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-LightIt.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-LightIt.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
+	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-RegularIt.eot');
+	src: local('Proxima Nova Regular Italic'), local('ProximaNova-RegularIt'),
+		url('../fonts/ProximaNova/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-RegularIt.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-RegularIt.ttf') format('truetype');
+	font-weight: 400;
+	font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-Semibold.eot');
+	src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
+		url('../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Semibold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-SemiboldIt.eot');
+	src: local('Proxima Nova Semibold Italic'), local('ProximaNova-SemiboldIt'),
+		url('../fonts/ProximaNova/ProximaNova-SemiboldIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-SemiboldIt.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-SemiboldIt.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-Bold.eot');
+	src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+		url('../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-BoldIt.eot');
+	src: local('Proxima Nova Bold Italic'), local('ProximaNova-BoldIt'),
+		url('../fonts/ProximaNova/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-BoldIt.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-BoldIt.ttf') format('truetype');
+	font-weight: 700;
+	font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-Extrabld.eot');
+	src: local('Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
+		url('../fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Extrabld.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Extrabld.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-ExtrabldIt.eot');
+	src: local('Proxima Nova Extrabold Italic'), local('ProximaNova-ExtrabldIt'),
+		url('../fonts/ProximaNova/ProximaNova-ExtrabldIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-ExtrabldIt.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-ExtrabldIt.ttf') format('truetype');
+	font-weight: 800;
+	font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-Black.eot');
+	src: local('Proxima Nova Black'), local('ProximaNova-Black'),
+		url('../fonts/ProximaNova/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-Black.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+	font-family: 'ProximaNova';
+	src: url('../fonts/ProximaNova/ProximaNova-BlackIt.eot');
+	src: local('Proxima Nova Black Italic'), local('ProximaNova-BlackIt'),
+		url('../fonts/ProximaNova/ProximaNova-BlackIt.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/ProximaNova/ProximaNova-BlackIt.woff') format('woff'),
+		url('../fonts/ProximaNova/ProximaNova-BlackIt.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-ExtraLight.ttf');
+    src: local('Nunito ExtraLight'), local('Nunito-ExtraLight'),
+    url('../fonts/Nunito/Nunito-ExtraLight.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-ExtraLightItalic.ttf');
+    src: local('Nunito ExtraLight Italic'), local('Nunito-ExtraLightIt'),
+    url('../fonts/Nunito/Nunito-ExtraLightItalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Light.ttf');
+    src: local('Nunito Light'), local('Nunito-Light'),
+    url('../fonts/Nunito/Nunito-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-LightItalic.ttf');
+    src: local('Nunito Light Italic'), local('Nunito-LightIt'),
+    url('../fonts/Nunito/Nunito-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Regular.ttf');
+    src: local('Nunito Regular'), local('Nunito-Regular'),
+    url('../fonts/Nunito/Nunito-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Italic.ttf');
+    src: local('Nunito Italic'), local('Nunito-It'),
+    url('../fonts/Nunito/Nunito-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-SemiBold.ttf');
+    src: local('Nunito SemiBold'), local('Nunito-SemiBold'),
+    url('../fonts/Nunito/Nunito-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-SemiBoldItalic.ttf');
+    src: local('Nunito SemiBold Italic'), local('Nunito-SemiBoldIt'),
+    url('../fonts/Nunito/Nunito-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Bold.ttf');
+    src: local('Nunito Bold'), local('Nunito-Bold'),
+    url('../fonts/Nunito/Nunito-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-BoldItalic.ttf');
+    src: local('Nunito Bold Italic'), local('Nunito-BoldIt'),
+    url('../fonts/Nunito/Nunito-BoldItalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-ExtraBold.ttf');
+    src: local('Nunito ExtraBold'), local('Nunito-ExtraBold'),
+    url('../fonts/Nunito/Nunito-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-ExtraBoldItalic.ttf');
+    src: local('Nunito ExtraBold Italic'), local('Nunito-ExtraBoldIt'),
+    url('../fonts/Nunito/Nunito-ExtraBoldItalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-Black.ttf');
+    src: local('Nunito Black'), local('Nunito-Black'),
+    url('../fonts/Nunito/Nunito-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonts/Nunito/Nunito-BlackItalic.ttf');
+    src: local('Nunito Black Italic'), local('Nunito-BlackIt'),
+    url('../fonts/Nunito/Nunito-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -webkit-tap-highlight-color: transparent;
+
+    scroll-behavior: smooth;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn,
+em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd,
+ol, ul, li, fieldset, form, label, legend, table,
+caption, tbody, tfoot, thead, tr, th, td, article, aside,
+canvas, details, embed, figure, figcaption, footer,
+header, hgroup, menu, nav, output, ruby, section,
+summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+    line-height: 19px;
+    width: 100%;
+    height: 100%;
+    color: #494343;
+}
+
+body input:not([type="checkbox"]),
+body select,
+body textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    font-family: "Nunito", sans-serif;
+    font-size: 16px;
+    line-height: 19px;
+    color: #494343;
+}
+
+body input:not([type="checkbox"])::-webkit-input-placeholder,
+body select::-webkit-input-placeholder,
+body textarea::-webkit-input-placeholder {
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+body input:not([type="checkbox"])::-moz-placeholder,
+body select::-moz-placeholder,
+body textarea::-moz-placeholder {
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+body input:not([type="checkbox"]):-ms-input-placeholder,
+body select:-ms-input-placeholder,
+body textarea:-ms-input-placeholder {
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+body input:not([type="checkbox"]):-moz-placeholder,
+body select:-moz-placeholder,
+body textarea:-moz-placeholder {
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    border: 0;
+    -webkit-text-fill-color: #494343;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    cursor: pointer;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    outline: 0;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+picture {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+picture img {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    width: 100%;
+    font-family: "Nunito", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.md, .xs {
+    display: none;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    min-width: 1200px;
+    height: 100%;
+    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
+    margin: 0 auto;
+    background: transparent;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding: 0 100px;
+    position: relative;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    background: linear-gradient(180deg, white 65%, transparent);
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.menu__list {
+    display: flex;
+}
+
+.menu__item {
+    margin-right: 50px;
+}
+
+.menu__item:last-child {
+    margin-right: 0;
+}
+
+.main {
+    max-height: 100vh;
+    max-height: calc(var(--vh, 1vh) * 100);
+    overflow-y: scroll;
+    overflow-x: clip;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
+    width: 100vw;
+    scroll-snap-align: start;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.section__container {
+    max-width: 1600px;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section--intro .section__container {
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.project--reverse .section__container {
+    flex-direction: row-reverse;
+}
+
+.section__title {
+    font-weight: 500;
+    font-size: 110px;
+    line-height: 110px;
+    color: #455738;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #6cd775 0%, #455738 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    letter-spacing: 0.03em;
+}
+
+.intro__info {
+    width: calc(100% - 500px);
+    margin-right: 50px;
+}
+
+.intro__greeting {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+.intro__title {
+    font-size: 70px;
+    line-height: 74px;
+    margin-bottom: 30px;
+}
+
+.section__info,
+.list__text,
+.intro__text {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.intro__text {
+    line-height: 26px;
+}
+
+.intro__text {
+    margin-bottom: 10px;
+}
+
+.intro__title + .intro__text {
+    margin-bottom: 30px;
+}
+
+.highlighted {
+    color: cadetblue;
+}
+
+.list__item {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 15px;
+    background: url('../images/stack_arrow.svg') no-repeat left center;
+}
+
+.list__item:last-child {
+    margin-bottom: 0;
+}
+
+.list--rotated .list__item {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    animation: rotateWord 18s linear infinite 0s;
+}
+
+.list--rotated .list__item:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.list--rotated .list__item:nth-child(3) {
+    animation-delay: 6s;
+}
+
+.list--rotated .list__item:nth-child(4) {
+    animation-delay: 9s;
+}
+
+.list--rotated .list__item:nth-child(5) {
+    animation-delay: 12s;
+}
+
+.list--rotated .list__item:nth-child(6) {
+    animation-delay: 15s;
+}
+
+@keyframes rotateWord {
+    0% {
+        opacity: 0;
+    }
+    2% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    5% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    17% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    20% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.intro__photo {
+    width: 450px;
+    height: 450px;
+    border-radius: 50% 4px 50% 4px;
+    position: relative;
+}
+
+.intro__photo:before {
+    content: '';
+    position: absolute;
+    right: -7px;
+    bottom: -7px;
+    border-radius: 50% 4px 50% 4px;
+    width: 100%;
+    height: 100%;
+    background: #E0EBEC;
+}
+
+.intro__photo_inner {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-radius: 50% 4px 50% 4px;
+}
+
+.intro__photo img {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    position: relative;
+    top: -50px
+}
+
+.scroller {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border: 1px solid #455738;
+    opacity: 0.7;
+    background: url(../images/scroller_arrow.svg) no-repeat center center;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.project__picture {
+    width: 650px;
+    margin-right: 40px;
+    min-width: 650px;
+    height: 461px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.project__slide {
+    width: 100%;
+    height: 461px;
+}
+
+.project__slide a[data-fancybox] {
+    cursor: url('../images/cursor_zoom.svg'), zoom-in;
+}
+
+.project__slide picture img {
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 100%;
+}
+
+.project--reverse .project__picture {
+    margin-left: 40px;
+    margin-right: 0;
+}
+
+.project__picture .slick-arrow {
+    top: 0;
+    left: 0;
+    transform: none;
+    width: 50px;
+    height: 100%;
+    z-index: 2;
+    cursor: url('../images/cursor_arrow_prev.svg'), w-resize;
+}
+
+.project__picture .slick-next {
+    left: auto;
+    right: 0;
+    cursor: url('../images/cursor_arrow_next.svg'), e-resize;
+}
+
+.project__type {
+    font-size: 15px;
+    line-height: 16px;
+    padding: 5px 7px;
+    background: cadetblue;
+    display: inline-block;
+    border-radius: 4px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.project__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.project__description {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.project__stack {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+.stack__block {
+    margin-right: 25px;
+    position: relative;
+    font-size: 16px;
+    line-height: 19px;
+    padding-left: 15px;
+    background: url('../images/stack_arrow.svg') no-repeat left center;
+}
+
+.stack__block:last-child {
+    margin-right: 0;
+}
+
+.project__links {
+    display: flex;
+    align-items: center;
+}
+
+.project__link {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: 1px solid cadetblue;
+    color: cadetblue;
+    transition: all .3s ease-out;
+}
+
+.project__link:hover {
+    background: cadetblue;
+    color: #FFFFFF;
+}
+
+.magnet {
+    transition: transform .3s ease;
+}
+
+.follow {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: cadetblue;
+    opacity: 0.5;
+    border-radius: 100%;
+    transition: transform .1s ease;
+  }
+
+@media only screen and (min-width: 1600px) {
+    .section__container {
+        max-width: 1600px;
+    }
+
+    .project__picture {
+        width: 850px;
+        margin-right: 80px;
+        min-width: 850px;
+        height: 603px;
+    }
+
+    .project__slide {
+        height: 603px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .container {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .md {
+        display: block;
+    }
+
+    .no-md {
+        display: none;
+    }
+
+    .wrapper {
+        min-width: 100%;
+    }
+
+    main {
+        max-height: none;
+        scroll-snap-type: none;
+    }
+
+    .container {
+        max-width: 100%;
+        margin: 0;
+    }
+}
