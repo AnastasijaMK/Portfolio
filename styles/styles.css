@@ -785,6 +785,10 @@ h1 {
     margin-bottom: 15px;
 }
 
+.project--lilac .project__type {
+    background: #e645a2;
+}
+
 .project__title {
     font-size: 24px;
     font-weight: 600;
@@ -836,6 +840,16 @@ h1 {
 
 .project__link:hover {
     background: cadetblue;
+    color: #FFFFFF;
+}
+
+.project--lilac .project__link {
+    border-color: #e645a2;
+    color: #e645a2;
+}
+
+.project--lilac .project__link:hover {
+    background: #e645a2;
     color: #FFFFFF;
 }
 
