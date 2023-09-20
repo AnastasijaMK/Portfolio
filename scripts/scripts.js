@@ -27,6 +27,7 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         //autoplay: true,
+        // pausoOnFocus?
         autoplaySpeed: 3000,
         dots: true,
         arrows: true,
