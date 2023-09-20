@@ -934,8 +934,8 @@ h1 {
 
 .follow {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 2px;
+    top: 2px;
     width: 20px;
     height: 20px;
     background-color: rgba(95, 158, 160, 0.5);
