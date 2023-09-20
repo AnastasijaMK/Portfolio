@@ -66,3 +66,16 @@ let mm = new MagnetMouse({
     }
 });
 mm.init();
+// Меняем цвет .follow
+window.addEventListener('mousemove',(e)=>{
+    const elementBelow = document.elementFromPoint(e.clientX, e.clientY);
+    if(elementBelow.classList.contains('project--lilac') || elementBelow.closest('.project--lilac')) {
+        document.querySelector('.follow').className = 'follow follow--lilac';
+    } else if(elementBelow.classList.contains('project--lightblue') || elementBelow.closest('.project--lightblue')) {
+        document.querySelector('.follow').className = 'follow follow--lightblue';
+    } else if(elementBelow.classList.contains('project--orchid') || elementBelow.closest('.project--orchid')) {
+        document.querySelector('.follow').className = 'follow follow--orchid';
+    } else if(!elementBelow.classList.contains('follow')) {
+        document.querySelector('.follow').className = 'follow';
+    }
+});
