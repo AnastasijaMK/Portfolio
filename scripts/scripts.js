@@ -26,8 +26,8 @@ $(document).ready(function () {
     $(".project__picture").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        //autoplay: true,
-        // pausoOnFocus?
+        autoplay: true,
+        pauseOnFocus: true,
         autoplaySpeed: 3000,
         dots: true,
         arrows: true,
@@ -69,7 +69,9 @@ mm.init();
 // Меняем цвет .follow
 window.addEventListener('mousemove',(e)=>{
     const elementBelow = document.elementFromPoint(e.clientX, e.clientY);
-    if(elementBelow.classList.contains('project--lilac') || elementBelow.closest('.project--lilac')) {
+    if(elementBelow.classList.contains('no-mouse-follow') || elementBelow.closest('.no-mouse-follow')) {
+        document.querySelector('.follow').className = 'follow no-mouse-follow';
+    } else if(elementBelow.classList.contains('project--lilac') || elementBelow.closest('.project--lilac')) {
         document.querySelector('.follow').className = 'follow follow--lilac';
     } else if(elementBelow.classList.contains('project--lightblue') || elementBelow.closest('.project--lightblue')) {
         document.querySelector('.follow').className = 'follow follow--lightblue';
