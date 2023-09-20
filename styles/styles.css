@@ -719,9 +719,9 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
-    border: 1px solid #455738;
+    border: 1px solid cadetblue;
     opacity: 0.7;
-    background: url(../images/scroller_arrow.svg) no-repeat center center;
+    background: url('../images/scroller_arrow_cadetblue.svg') no-repeat center center;
     background-size: 20px;
     cursor: pointer;
 }
