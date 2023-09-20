@@ -789,6 +789,10 @@ h1 {
     background: #e645a2;
 }
 
+.project--lightblue .project__type {
+    background: #72a0ef;
+}
+
 .project__title {
     font-size: 24px;
     font-weight: 600;
@@ -850,6 +854,16 @@ h1 {
 
 .project--lilac .project__link:hover {
     background: #e645a2;
+    color: #FFFFFF;
+}
+
+.project--lightblue .project__link {
+    border-color: #72a0ef;
+    color: #72a0ef;
+}
+
+.project--lightblue .project__link:hover {
+    background: #72a0ef;
     color: #FFFFFF;
 }
 
