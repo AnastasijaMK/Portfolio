@@ -715,7 +715,7 @@ h1 {
     margin-bottom: 10px;
     position: relative;
     padding-left: 15px;
-    background: url('../images/stack_arrow.svg') no-repeat left center;
+    background: url('../images/stack_arrow_cadetblue.svg') no-repeat left center;
 }
 
 .list__item:last-child {
