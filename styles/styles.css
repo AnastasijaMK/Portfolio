@@ -511,7 +511,7 @@ h1 {
 .header__container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -521,11 +521,32 @@ h1 {
 }
 
 .menu__item {
-    margin-right: 50px;
+    margin-right: 35px;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .menu__item:last-child {
     margin-right: 0;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+}
+
+.social__icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.social__text {
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .main {
@@ -940,6 +961,7 @@ h1 {
     height: 20px;
     background-color: rgba(95, 158, 160, 0.5);
     border-radius: 100%;
+    z-index: 3;
     transition: transform 0.1s ease,
                 background-color 0.3s ease-out;
 }
