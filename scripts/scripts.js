@@ -85,8 +85,11 @@ window.addEventListener('mousemove',(e)=>{
 
 // Изменение шапки при прокрутке страницы
 const scrollingBlock = document.documentElement.clientWidth > 1199 ? document.querySelector('main') : window;
+console.log(scrollingBlock);
 scrollingBlock.addEventListener('scroll',()=>{
-    const scrollValue = scrollingBlock.scrollTop;
+    console.log('hey');
+    const scrollValue = document.documentElement.clientWidth > 1199 ? scrollingBlock.scrollTop : scrollingBlock.pageYOffset;
+    console.log(scrollValue);
     if(scrollValue > 0) {
         document.querySelector('header').classList.add('header--scrolling');
     } else {

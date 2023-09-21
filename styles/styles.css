@@ -1014,7 +1014,11 @@ h1 {
         min-width: 100%;
     }
 
-    main {
+    .header--scrolling {
+        box-shadow: 0 2px 20px rgba(8, 41, 79, 0.05);
+    }
+
+    .main {
         max-height: none;
         scroll-snap-type: none;
     }
@@ -1022,5 +1026,7 @@ h1 {
     .container {
         max-width: 100%;
         margin: 0;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
