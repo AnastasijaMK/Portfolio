@@ -56,7 +56,7 @@ scrollerButton?.addEventListener('click',()=>{
 
 
 // Настройка эффекта "магнита" при наведении курсором
-let mm = new MagnetMouse({
+let cursorFollow = new MagnetMouse({
     magnet: {
         element: '.magnet',
         distance: 20
@@ -65,7 +65,7 @@ let mm = new MagnetMouse({
         element: '.follow'
     }
 });
-mm.init();
+cursorFollow.init();
 // Меняем цвет .follow
 window.addEventListener('mousemove',(e)=>{
     const elementBelow = document.elementFromPoint(e.clientX, e.clientY);

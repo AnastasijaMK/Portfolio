@@ -537,6 +537,39 @@ h1 {
     margin-right: 0;
 }
 
+.menu__text {
+    background-image: linear-gradient(to bottom, cadetblue, cadetblue 50%, #494343 50%);
+    background-size: 100% 200%;
+    background-position: 0 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.menu__text:hover {
+    background-position: 0 0;
+}
+
+.menu__text::before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu__text:hover::before {
+    opacity: 1;
+    bottom: -3px
+}
+
 .social__link {
     display: flex;
     align-items: center;
@@ -554,6 +587,36 @@ h1 {
 .social__text {
     font-size: 16px;
     line-height: 19px;
+    background-image: linear-gradient(to bottom, cadetblue, cadetblue 50%, #494343 50%);
+    background-size: 100% 200%;
+    background-position: 0 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+}
+
+.social__item:hover .social__text {
+    background-position: 0 0;
+}
+
+.social__text::before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.social__item:hover .social__text::before {
+    opacity: 1;
+    bottom: -3px
 }
 
 .main {
@@ -876,7 +939,7 @@ h1 {
 .project__stack {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 .stack__block {
