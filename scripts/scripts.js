@@ -70,7 +70,7 @@ cursorFollow.init();
 window.addEventListener('mousemove',(e)=>{
     const elementBelow = document.elementFromPoint(e.clientX, e.clientY);
     if(elementBelow.classList.contains('no-mouse-follow') || elementBelow.closest('.no-mouse-follow')) {
-        document.querySelector('.follow').className = 'follow no-mouse-follow';
+        document.querySelector('.follow').className = 'follow follow--disable';
     } else if(elementBelow.classList.contains('project--lilac') || elementBelow.closest('.project--lilac')) {
         document.querySelector('.follow').className = 'follow follow--lilac';
     } else if(elementBelow.classList.contains('project--lightblue') || elementBelow.closest('.project--lightblue')) {
@@ -93,3 +93,21 @@ scrollingBlock.addEventListener('scroll',()=>{
         document.querySelector('header').classList.remove('header--scrolling');
     }
 });
+
+
+// Анимация кнопок
+const projectButtons = document.querySelectorAll('.project__link');
+let projectButtonsAnimationTimer;
+for(let i=0; i<projectButtons?.length; i++) {
+    projectButtons[i].addEventListener('mouseleave',()=>{
+        projectButtons[i].querySelector('.project__link_hover').style.transform = 'translateY(-160%)';
+        projectButtonsAnimationTimer = setTimeout(() => {
+            projectButtons[i].querySelector('.project__link_hover').style.transition = 'transform 0s ease-out';
+            projectButtons[i].querySelector('.project__link_hover').style.transform = '';
+            setTimeout(() => {
+                projectButtons[i].querySelector('.project__link_hover').style.transition = '';
+            }, 50);
+        }, 300);
+    });
+}
+

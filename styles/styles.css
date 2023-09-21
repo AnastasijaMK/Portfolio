@@ -1,172 +1,4 @@
-/* ProximaNova */
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNovaT-Thin.eot');
-	src: local('Proxima Nova Thin'), local('ProximaNovaT-Thin'),
-		url('../fonts/ProximaNova/ProximaNovaT-Thin.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNovaT-Thin.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNovaT-Thin.ttf') format('truetype');
-	font-weight: 100;
-	font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-ThinIt.eot');
-	src: local('Proxima Nova Thin Italic'), local('ProximaNova-ThinIt'),
-		url('../fonts/ProximaNova/ProximaNova-ThinIt.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-ThinIt.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-ThinIt.ttf') format('truetype');
-	font-weight: 100;
-	font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-Light.eot');
-	src: local('Proxima Nova Light'), local('ProximaNova-Light'),
-		url('../fonts/ProximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-Light.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-Light.ttf') format('truetype');
-	font-weight: 300;
-	font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-LightIt.eot');
-	src: local('Proxima Nova Light Italic'), local('ProximaNova-LightIt'),
-		url('../fonts/ProximaNova/ProximaNova-LightIt.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-LightIt.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-LightIt.ttf') format('truetype');
-	font-weight: 300;
-	font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-Regular.eot');
-	src: local('Proxima Nova Regular'), local('ProximaNova-Regular'),
-		url('../fonts/ProximaNova/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-Regular.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype');
-	font-weight: 400;
-	font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-RegularIt.eot');
-	src: local('Proxima Nova Regular Italic'), local('ProximaNova-RegularIt'),
-		url('../fonts/ProximaNova/ProximaNova-RegularIt.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-RegularIt.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-RegularIt.ttf') format('truetype');
-	font-weight: 400;
-	font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-Semibold.eot');
-	src: local('Proxima Nova Semibold'), local('ProximaNova-Semibold'),
-		url('../fonts/ProximaNova/ProximaNova-Semibold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-Semibold.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-Semibold.ttf') format('truetype');
-	font-weight: 600;
-	font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-SemiboldIt.eot');
-	src: local('Proxima Nova Semibold Italic'), local('ProximaNova-SemiboldIt'),
-		url('../fonts/ProximaNova/ProximaNova-SemiboldIt.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-SemiboldIt.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-SemiboldIt.ttf') format('truetype');
-	font-weight: 600;
-	font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-Bold.eot');
-	src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
-		url('../fonts/ProximaNova/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-Bold.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-Bold.ttf') format('truetype');
-	font-weight: 700;
-	font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-BoldIt.eot');
-	src: local('Proxima Nova Bold Italic'), local('ProximaNova-BoldIt'),
-		url('../fonts/ProximaNova/ProximaNova-BoldIt.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-BoldIt.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-BoldIt.ttf') format('truetype');
-	font-weight: 700;
-	font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-Extrabld.eot');
-	src: local('Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
-		url('../fonts/ProximaNova/ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-Extrabld.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-Extrabld.ttf') format('truetype');
-	font-weight: 800;
-	font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-ExtrabldIt.eot');
-	src: local('Proxima Nova Extrabold Italic'), local('ProximaNova-ExtrabldIt'),
-		url('../fonts/ProximaNova/ProximaNova-ExtrabldIt.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-ExtrabldIt.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-ExtrabldIt.ttf') format('truetype');
-	font-weight: 800;
-	font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-Black.eot');
-	src: local('Proxima Nova Black'), local('ProximaNova-Black'),
-		url('../fonts/ProximaNova/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-Black.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-Black.ttf') format('truetype');
-	font-weight: 900;
-	font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-	font-family: 'ProximaNova';
-	src: url('../fonts/ProximaNova/ProximaNova-BlackIt.eot');
-	src: local('Proxima Nova Black Italic'), local('ProximaNova-BlackIt'),
-		url('../fonts/ProximaNova/ProximaNova-BlackIt.eot?#iefix') format('embedded-opentype'),
-		url('../fonts/ProximaNova/ProximaNova-BlackIt.woff') format('woff'),
-		url('../fonts/ProximaNova/ProximaNova-BlackIt.ttf') format('truetype');
-	font-weight: 900;
-	font-style: italic;
-    font-display: swap;
-}
-
+/* Nunito */
 @font-face {
     font-family: 'Nunito';
     src: url('../fonts/Nunito/Nunito-ExtraLight.ttf');
@@ -307,6 +139,15 @@
     font-display: swap;
 }
 
+:root {
+    --main-color: #494343;
+    --primary-color: #5F9EA0;
+    --lilac-color: #E645A2;
+    --lightblue-color: #72A0EF;
+    --orchid-color: #A286FB;
+    --white-color: #FFFFFF;
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -346,7 +187,7 @@ body {
     line-height: 19px;
     width: 100%;
     height: 100%;
-    color: #494343;
+    color: var(--main-color);
 }
 
 body input:not([type="checkbox"]),
@@ -359,7 +200,7 @@ body textarea {
     font-family: "Nunito", sans-serif;
     font-size: 16px;
     line-height: 19px;
-    color: #494343;
+    color: var(--main-color);
 }
 
 body input:not([type="checkbox"])::-webkit-input-placeholder,
@@ -406,7 +247,7 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
     border: 0;
-    -webkit-text-fill-color: #494343;
+    -webkit-text-fill-color: var(--main-color);
     -webkit-box-shadow: 0 0 0 1000px transparent inset;
     transition: background-color 5000s ease-in-out 0s;
 }
@@ -505,7 +346,7 @@ h1 {
     left: 0;
     width: 100%;
     z-index: 3;
-    background: #FFFFFF;
+    background: var(--white-color);
     transition: box-shadow 0.3s ease-out;
 }
 
@@ -538,7 +379,7 @@ h1 {
 }
 
 .menu__text {
-    background-image: linear-gradient(to bottom, cadetblue, cadetblue 50%, #494343 50%);
+    background-image: linear-gradient(to bottom, var(--primary-color), var(--primary-color) 50%, var(--main-color) 50%);
     background-size: 100% 200%;
     background-position: 0 100%;
     -webkit-background-clip: text;
@@ -553,7 +394,7 @@ h1 {
 
 .menu__text::before {
     content: '';
-    background: #54b3d6;
+    background: var(--primary-color);
     display: block;
     position: absolute;
     bottom: -10px;
@@ -587,7 +428,7 @@ h1 {
 .social__text {
     font-size: 16px;
     line-height: 19px;
-    background-image: linear-gradient(to bottom, cadetblue, cadetblue 50%, #494343 50%);
+    background-image: linear-gradient(to bottom, var(--primary-color), var(--primary-color) 50%, var(--main-color) 50%);
     background-size: 100% 200%;
     background-position: 0 100%;
     -webkit-background-clip: text;
@@ -602,7 +443,7 @@ h1 {
 
 .social__text::before {
     content: '';
-    background: #54b3d6;
+    background: var(--primary-color);
     display: block;
     position: absolute;
     bottom: -10px;
@@ -620,8 +461,8 @@ h1 {
 }
 
 .main {
-    max-height: 100vh;
     max-height: calc(var(--vh, 1vh) * 100);
+    max-height: 100vh;
     overflow-y: scroll;
     overflow-x: clip;
     -ms-scroll-snap-type: y mandatory;
@@ -653,22 +494,6 @@ h1 {
 
 .project--reverse .section__container {
     flex-direction: row-reverse;
-}
-
-.section__title {
-    font-weight: 500;
-    font-size: 110px;
-    line-height: 110px;
-    color: #455738;
-    text-align: center;
-    margin-bottom: 50px;
-    text-transform: uppercase;
-    background: linear-gradient(180deg, #6cd775 0%, #455738 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-    letter-spacing: 0.03em;
 }
 
 .intro__info {
@@ -708,7 +533,7 @@ h1 {
 }
 
 .highlighted {
-    color: cadetblue;
+    color: var(--primary-color);
 }
 
 .list__item {
@@ -792,7 +617,8 @@ h1 {
     border-radius: 50% 4px 50% 4px;
     width: 100%;
     height: 100%;
-    background: #E0EBEC;
+    background: var(--primary-color);
+    opacity: 0.2;
 }
 
 .intro__photo_inner {
@@ -810,7 +636,7 @@ h1 {
     left: 50%;
     transform: translateX(-50%);
     border-radius: 50%;
-    border: 1px solid cadetblue;
+    border: 1px solid var(--primary-color);
     opacity: 0.7;
     background: url('../images/scroller_arrow_cadetblue.svg') no-repeat center center;
     background-size: 20px;
@@ -904,23 +730,23 @@ h1 {
     font-size: 15px;
     line-height: 16px;
     padding: 5px 7px;
-    background: cadetblue;
+    background: var(--primary-color);
     display: inline-block;
     border-radius: 4px;
-    color: #FFFFFF;
+    color: var(--white-color);
     margin-bottom: 15px;
 }
 
 .project--lilac .project__type {
-    background: #e645a2;
+    background: var(--lilac-color);
 }
 
 .project--lightblue .project__type {
-    background: #72a0ef;
+    background: var(--lightblue-color);
 }
 
 .project--orchid .project__type {
-    background: #a286fb;
+    background: var(--orchid-color);
 }
 
 .project__title {
@@ -979,44 +805,76 @@ h1 {
     justify-content: center;
     padding: 10px 20px;
     border-radius: 4px;
-    border: 1px solid cadetblue;
-    color: cadetblue;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
     transition: all .3s ease-out;
+    position: relative;
+    overflow: hidden;
 }
 
 .project__link:hover {
-    background: cadetblue;
-    color: #FFFFFF;
+    color: var(--white-color);
+}
+
+.project__link_hover {
+    position: absolute;
+    z-index: 0;
+    width: 150%;
+    height: 150%;
+    border-radius: 80%;
+    bottom: -25%;
+    left: -25%;
+    background-color: var(--primary-color);
+    transform: translateY(160%);
+    transition: transform .3s ease-out;
+}
+
+.project__link:hover .project__link_hover {
+    transform: translateY(0);
+}
+
+.project__link_text {
+    position: relative;
+    z-index: 2;
 }
 
 .project--lilac .project__link {
-    border-color: #e645a2;
-    color: #e645a2;
+    border-color: var(--lilac-color);
+    color: var(--lilac-color);
 }
 
 .project--lilac .project__link:hover {
-    background: #e645a2;
-    color: #FFFFFF;
+    color: var(--white-color);
+}
+
+.project--lilac .project__link_hover {
+    background-color: var(--lilac-color);
 }
 
 .project--lightblue .project__link {
-    border-color: #72a0ef;
-    color: #72a0ef;
+    border-color: var(--lightblue-color);
+    color: var(--lightblue-color);
 }
 
 .project--lightblue .project__link:hover {
-    background: #72a0ef;
-    color: #FFFFFF;
+    color: var(--white-color);
+}
+
+.project--lightblue .project__link_hover {
+    background-color: var(--lightblue-color);
 }
 
 .project--orchid .project__link {
-    border-color: #a286fb;
-    color: #a286fb;
+    border-color: var(--orchid-color);
+    color: var(--orchid-color);
 }
 
 .project--orchid .project__link:hover {
-    background: #a286fb;
-    color: #FFFFFF;
+    color: var(--white-color);
+}
+
+.project--orchid .project__link_hover {
+    background-color: var(--orchid-color);
 }
 
 .magnet {
@@ -1033,7 +891,8 @@ h1 {
     border-radius: 100%;
     z-index: 3;
     transition: transform 0.1s ease,
-                background-color 0.3s ease-out;
+                background-color 0.3s ease-out,
+                width 0s ease-out;
 }
 
 .follow--lilac {
@@ -1048,8 +907,12 @@ h1 {
     background-color: rgba(162, 134, 251, 0.5);
 }
 
-.no-mouse-follow {
+.follow--disable {
     background-color: transparent;
+    width: 0;
+    transition: transform 0.1s ease,
+                background-color 0.3s ease-out,
+                width 0s ease-out 0.3s;
 }
 
 .slick-dots {
