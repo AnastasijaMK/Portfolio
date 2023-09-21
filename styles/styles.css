@@ -505,7 +505,8 @@ h1 {
     left: 0;
     width: 100%;
     z-index: 3;
-    background: linear-gradient(180deg, white 65%, transparent);
+    background: #FFFFFF;
+    transition: box-shadow 0.3s ease-out;
 }
 
 .header__container {
@@ -514,6 +515,12 @@ h1 {
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
+    transition: padding 0.3s ease-out;
+}
+
+.header--scrolling .header__container {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .menu__list {

@@ -81,3 +81,15 @@ window.addEventListener('mousemove',(e)=>{
         document.querySelector('.follow').className = 'follow';
     }
 });
+
+
+// Изменение шапки при прокрутке страницы
+const scrollingBlock = document.documentElement.clientWidth > 1199 ? document.querySelector('main') : window;
+scrollingBlock.addEventListener('scroll',()=>{
+    const scrollValue = scrollingBlock.scrollTop;
+    if(scrollValue > 0) {
+        document.querySelector('header').classList.add('header--scrolling');
+    } else {
+        document.querySelector('header').classList.remove('header--scrolling');
+    }
+});
