@@ -47,12 +47,14 @@ $(document).ready(function () {
 
 
 // Прокрутка к следующему экрану по клику на кнопку
-const scrollerButton = document.querySelector('.scroller');
-scrollerButton?.addEventListener('click',()=>{
-    const sectionCurrent = document.querySelector('.section--intro');
-    const sectionNext = sectionCurrent.nextElementSibling;
-    sectionNext.scrollIntoView(top);
-});
+const scrollerButton = document.querySelectorAll('.scroller');
+for(let i=0; i<scrollerButton?.length; i++) {
+    scrollerButton[i].addEventListener('click',()=>{
+        const sectionCurrent = scrollerButton[i].closest('.section');
+        const sectionNext = sectionCurrent.nextElementSibling;
+        sectionNext.scrollIntoView(top);
+    });
+}
 
 
 // Настройка эффекта "магнита" при наведении курсором
@@ -66,36 +68,79 @@ let cursorFollow = new MagnetMouse({
     }
 });
 cursorFollow.init();
+
 // Меняем цвет .follow
+let lastCursorClientX = 0;
+let lastCursorClientY = 0;
 window.addEventListener('mousemove',(e)=>{
     const elementBelow = document.elementFromPoint(e.clientX, e.clientY);
-    if(elementBelow.classList.contains('no-mouse-follow') || elementBelow.closest('.no-mouse-follow')) {
-        document.querySelector('.follow').className = 'follow follow--disable';
-    } else if(elementBelow.classList.contains('project--lilac') || elementBelow.closest('.project--lilac')) {
-        document.querySelector('.follow').className = 'follow follow--lilac';
-    } else if(elementBelow.classList.contains('project--lightblue') || elementBelow.closest('.project--lightblue')) {
-        document.querySelector('.follow').className = 'follow follow--lightblue';
-    } else if(elementBelow.classList.contains('project--orchid') || elementBelow.closest('.project--orchid')) {
-        document.querySelector('.follow').className = 'follow follow--orchid';
-    } else if(!elementBelow.classList.contains('follow')) {
-        document.querySelector('.follow').className = 'follow';
-    }
+    lastCursorClientX = e.clientX;
+    lastCursorClientY = e.clientY;
+    checkFollowColor(elementBelow);
 });
+document.querySelector('main').addEventListener('scroll',()=>{
+    const elementBelow = document.elementFromPoint(lastCursorClientX, lastCursorClientY);
+    checkFollowColor(elementBelow);
+});
+function checkFollowColor(elementBelow) {
+    const followBlock = document.querySelector('.follow');
+    if(!followBlock) return;
+    if(elementBelow.classList.contains('no-mouse-follow') || elementBelow.closest('.no-mouse-follow')) {
+        followBlock.className = 'follow follow--disable';
+    } else if(elementBelow.classList.contains('project--lilac') || elementBelow.closest('.project--lilac') ||
+              elementBelow.classList.contains('header--lilac') || elementBelow.closest('.header--lilac')) {
+        followBlock.className = 'follow follow--lilac';
+    } else if(elementBelow.classList.contains('project--lightblue') || elementBelow.closest('.project--lightblue') ||
+        elementBelow.classList.contains('header--lightblue') || elementBelow.closest('.header--lightblue')) {
+        followBlock.className = 'follow follow--lightblue';
+    } else if(elementBelow.classList.contains('project--orchid') || elementBelow.closest('.project--orchid') ||
+        elementBelow.classList.contains('header--orchid') || elementBelow.closest('.header--orchid')) {
+        followBlock.className = 'follow follow--orchid';
+    } else if(!elementBelow.classList.contains('follow')) {
+        followBlock.className = 'follow';
+    }
+}
 
 
 // Изменение шапки при прокрутке страницы
 const scrollingBlock = document.documentElement.clientWidth > 1199 ? document.querySelector('main') : window;
-console.log(scrollingBlock);
 scrollingBlock.addEventListener('scroll',()=>{
-    console.log('hey');
     const scrollValue = document.documentElement.clientWidth > 1199 ? scrollingBlock.scrollTop : scrollingBlock.pageYOffset;
-    console.log(scrollValue);
     if(scrollValue > 0) {
         document.querySelector('header').classList.add('header--scrolling');
     } else {
         document.querySelector('header').classList.remove('header--scrolling');
     }
+    let currentSection = getcurrentSection();
+    if(currentSection) {
+        checkHeaderColor(currentSection);
+    }
 });
+// Получить текущую секцию
+function getcurrentSection() {
+    const sections = document.querySelectorAll('.section');
+    let currentSection;
+    for(let i=0; i<sections?.length; i++) {
+        if(sections[i].getBoundingClientRect().top === 0) {
+            currentSection = sections[i];
+        }
+    }
+    if(currentSection) {
+        return currentSection;
+    }
+}
+// Изменить цвет в шапке в зависимости от текущей секции
+function checkHeaderColor(currentSection) {
+    if(currentSection.classList.contains('project--lilac')) {
+        document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling header--lilac' : 'header header--lilac';
+    } else if(currentSection.classList.contains('project--lightblue')) {
+        document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling header--lightblue' : 'header header--lightblue';
+    } else if(currentSection.classList.contains('project--orchid')) {
+        document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling header--orchid' : 'header header--orchid';
+    } else {
+        document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling' : 'header';
+    }
+}
 
 
 // Анимация кнопок
