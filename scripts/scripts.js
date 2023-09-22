@@ -9,18 +9,6 @@ window.addEventListener('resize', function(event) {
 }, true);
 
 
-// Инициализация эффекта печати текста 
-// let typed = new Typed('.section__title.typed', {
-//     strings: ["Портфолио"], // строки выводимые в печать
-//     typeSpeed: 200, // скорость набора
-//     backSpeed: 100, // скорость удаления текста
-//     startDelay: 0, // начальная задержка перед набором
-//     backDelay: 500, // пауза перед удалением текста
-//     loop: true, // повтор (true или false)
-//     loopCount: false, // число повторов, false = бесконечно
-//     showCursor: true, // отображение курсора
-// });
-
 $(document).ready(function () {
     // Слайдеры -->
     $(".project__picture").slick({
@@ -52,22 +40,32 @@ for(let i=0; i<scrollerButton?.length; i++) {
     scrollerButton[i].addEventListener('click',()=>{
         const sectionCurrent = scrollerButton[i].closest('.section');
         const sectionNext = sectionCurrent.nextElementSibling;
-        sectionNext.scrollIntoView(top);
+        if(document.documentElement.clientWidth > 1199) {
+            sectionNext.scrollIntoView(top);
+        } else {
+            let sectionCurrentHeight = sectionCurrent.offsetHeight + +(getComputedStyle(sectionCurrent).marginBottom.replace('px',''));
+            window.scrollTo(0, sectionCurrentHeight);
+        }
     });
 }
 
 
 // Настройка эффекта "магнита" при наведении курсором
-let cursorFollow = new MagnetMouse({
-    magnet: {
-        element: '.magnet',
-        distance: 20
-    },
-    follow: {
-        element: '.follow'
+function cursorFollowInit() {
+    let cursorFollow = new MagnetMouse({
+        magnet: {
+            element: '.magnet',
+            distance: 20
+        },
+        follow: {
+            element: '.follow'
+        }
+    });
+    if(document.documentElement.clientWidth > 1199) {
+        cursorFollow.init();
     }
-});
-cursorFollow.init();
+}
+cursorFollowInit();
 
 // Меняем цвет .follow
 let lastCursorClientX = 0;
@@ -148,14 +146,22 @@ const projectButtons = document.querySelectorAll('.project__link');
 let projectButtonsAnimationTimer;
 for(let i=0; i<projectButtons?.length; i++) {
     projectButtons[i].addEventListener('mouseleave',()=>{
-        projectButtons[i].querySelector('.project__link_hover').style.transform = 'translateY(-160%)';
-        projectButtonsAnimationTimer = setTimeout(() => {
-            projectButtons[i].querySelector('.project__link_hover').style.transition = 'transform 0s ease-out';
-            projectButtons[i].querySelector('.project__link_hover').style.transform = '';
-            setTimeout(() => {
-                projectButtons[i].querySelector('.project__link_hover').style.transition = '';
-            }, 50);
-        }, 300);
+        if(document.documentElement.clientWidth > 1199) {
+            projectButtons[i].querySelector('.project__link_hover').style.transform = 'translateY(-160%)';
+            projectButtonsAnimationTimer = setTimeout(() => {
+                projectButtons[i].querySelector('.project__link_hover').style.transition = 'transform 0s ease-out';
+                projectButtons[i].querySelector('.project__link_hover').style.transform = '';
+                setTimeout(() => {
+                    projectButtons[i].querySelector('.project__link_hover').style.transition = '';
+                }, 50);
+            }, 300);
+        }
     });
 }
 
+
+// Открыть меню на адаптивных версиях
+const menuButton = document.querySelector('.j-open-menu');
+menuButton?.addEventListener('click',()=>{
+    menuButton.classList.toggle('menu_burger--active');
+});
