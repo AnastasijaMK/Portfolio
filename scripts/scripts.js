@@ -163,8 +163,8 @@ for(let i=0; i<projectButtons?.length; i++) {
 // Открыть меню на адаптивных версиях
 const menuButton = document.querySelector('.j-open-menu');
 const popupShadow = document.querySelector('.wrapper--shadow');
+const menuPopup = document.querySelector('.popup--menu');
 menuButton?.addEventListener('click',()=>{
-    const menuPopup = document.querySelector('.popup--menu');
     menuButton.classList.toggle('menu_burger--active');
     menuPopup?.classList.toggle('popup--active');
     if(menuButton.classList.contains('menu_burger--active')) {
@@ -189,4 +189,32 @@ function scrollBody() {
     document.documentElement.scrollTo(0, document.body.getAttribute('data-scroll'));
     document.documentElement.style.scrollBehavior = '';
     document.body.removeAttribute('data-scroll');
+}
+
+
+// Плавная прокрутка к якорю
+const smoothLinks = document.querySelectorAll('a[href^="#"]');
+if(smoothLinks) {
+    for (let smoothLink of smoothLinks) {
+        smoothLink.addEventListener('click', function (e) {
+            e.preventDefault();
+            const id = smoothLink.getAttribute('href');
+            if(!document.querySelector(id)) return;
+            if(document.documentElement.clientWidth > 1199) {
+                document.querySelector(id).scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            } else {
+                const headerHeight = document.querySelector('.header').offsetHeight;
+                menuPopup?.classList.toggle('popup--active');
+                menuButton?.classList.toggle('menu_burger--active');
+                document.body.style.position = '';
+                document.documentElement.style.scrollBehavior = 'unset';
+                document.documentElement.scrollTo(0, document.querySelector(id).offsetTop - headerHeight);
+                document.documentElement.style.scrollBehavior = '';
+                document.body.removeAttribute('data-scroll');
+            }
+        });
+    }
 }
