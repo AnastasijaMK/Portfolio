@@ -162,6 +162,31 @@ for(let i=0; i<projectButtons?.length; i++) {
 
 // Открыть меню на адаптивных версиях
 const menuButton = document.querySelector('.j-open-menu');
+const popupShadow = document.querySelector('.wrapper--shadow');
 menuButton?.addEventListener('click',()=>{
+    const menuPopup = document.querySelector('.popup--menu');
     menuButton.classList.toggle('menu_burger--active');
+    menuPopup?.classList.toggle('popup--active');
+    if(menuButton.classList.contains('menu_burger--active')) {
+        fixBody();
+    } else {
+        scrollBody();
+    }
 });
+
+
+// Запрет прокрутки тела страницы на моб устройстве
+function fixBody() {
+    document.body.setAttribute('data-scroll', document.documentElement.scrollTop);
+    document.body.style.position = 'fixed';
+}
+
+
+// Разрешение прокрутки тела страницы на моб устройстве
+function scrollBody() {
+    document.body.style.position = '';
+    document.documentElement.style.scrollBehavior = 'unset';
+    document.documentElement.scrollTo(0, document.body.getAttribute('data-scroll'));
+    document.documentElement.style.scrollBehavior = '';
+    document.body.removeAttribute('data-scroll');
+}
