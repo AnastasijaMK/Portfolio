@@ -41,7 +41,7 @@ for(let i=0; i<scrollerButton?.length; i++) {
         const sectionCurrent = scrollerButton[i].closest('.section');
         const sectionNext = sectionCurrent.nextElementSibling;
         if(document.documentElement.clientWidth > 1199) {
-            sectionNext.scrollIntoView(top);
+            if(sectionNext) sectionNext.scrollIntoView(top);
         } else {
             let sectionCurrentHeight = sectionCurrent.offsetHeight + +(getComputedStyle(sectionCurrent).marginBottom.replace('px',''));
             window.scrollTo(0, sectionCurrentHeight);
@@ -94,6 +94,9 @@ function checkFollowColor(elementBelow) {
     } else if(elementBelow.classList.contains('project--orchid') || elementBelow.closest('.project--orchid') ||
         elementBelow.classList.contains('header--orchid') || elementBelow.closest('.header--orchid')) {
         followBlock.className = 'follow follow--orchid';
+    } else if(elementBelow.classList.contains('project--orange') || elementBelow.closest('.project--orange') ||
+        elementBelow.classList.contains('header--orange') || elementBelow.closest('.header--orange')) {
+        followBlock.className = 'follow follow--orange';
     } else if(!elementBelow.classList.contains('follow')) {
         followBlock.className = 'follow';
     }
@@ -135,6 +138,8 @@ function checkHeaderColor(currentSection) {
         document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling header--lightblue' : 'header header--lightblue';
     } else if(currentSection.classList.contains('project--orchid')) {
         document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling header--orchid' : 'header header--orchid';
+    } else if(currentSection.classList.contains('project--orange')) {
+        document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling header--orange' : 'header header--orange';
     } else {
         document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling' : 'header';
     }
