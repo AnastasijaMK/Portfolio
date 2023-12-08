@@ -144,6 +144,7 @@
     --primary-color: #5F9EA0;
     --lilac-color: #E645A2;
     --lightblue-color: #72A0EF;
+    --kleinblue-color: #3372BF;
     --blue-color: #115EFF;
     --orchid-color: #A286FB;
     --orange-color: #FF8757;
@@ -1099,6 +1100,10 @@ h1 {
         background-image: linear-gradient(to bottom, var(--blue-color), var(--blue-color) 50%, var(--main-color) 50%);
     }
 
+    .header--klein-blue .menu__text {
+        background-image: linear-gradient(to bottom, var(--kleinblue-color), var(--kleinblue-color) 50%, var(--main-color) 50%);
+    }
+
     .header--lilac .menu__text:before {
         background: var(--lilac-color);
     }
@@ -1117,6 +1122,10 @@ h1 {
 
     .header--blue .menu__text:before {
         background: var(--blue-color);
+    }
+
+    .header--klein-blue .menu__text:before {
+        background: var(--kleinblue-color);
     }
 
     .header--lilac .social__text {
@@ -1139,6 +1148,10 @@ h1 {
         background-image: linear-gradient(to bottom, var(--blue-color), var(--blue-color) 50%, var(--main-color) 50%);
     }
 
+    .header--klein-blue .social__text {
+        background-image: linear-gradient(to bottom, var(--kleinblue-color), var(--kleinblue-color) 50%, var(--main-color) 50%);
+    }
+
     .header--lilac .social__text:before {
         background: var(--lilac-color);
     }
@@ -1157,6 +1170,10 @@ h1 {
 
     .header--blue .social__text:before {
         background: var(--blue-color);
+    }
+
+    .header--klein-blue .social__text:before {
+        background: var(--kleinblue-color);
     }
 
     .project--lilac .scroller {
@@ -1189,6 +1206,12 @@ h1 {
         background-size: 20px;
     }
 
+    .project--klein-blue .scroller {
+        border: 1px solid var(--kleinblue-color);
+        background: url('../images/scroller_arrow_kleinblue.svg') no-repeat center center;
+        background-size: 20px;
+    }
+
     .project--lilac .project__slide a[data-fancybox] {
         cursor: url('../images/cursor_zoom_lilac.svg'), zoom-in;
     }
@@ -1207,6 +1230,10 @@ h1 {
 
     .project--blue .project__slide a[data-fancybox] {
         cursor: url('../images/cursor_zoom_blue.svg'), zoom-in;
+    }
+
+    .project--klein-blue .project__slide a[data-fancybox] {
+        cursor: url('../images/cursor_zoom_kleinblue.svg'), zoom-in;
     }
 
     .project--lilac .project__picture .slick-arrow {
@@ -1229,6 +1256,10 @@ h1 {
         cursor: url('../images/cursor_arrow_prev_blue.svg'), w-resize;
     }
 
+    .project--klein-blue .project__picture .slick-arrow {
+        cursor: url('../images/cursor_arrow_prev_kleinblue.svg'), w-resize;
+    }
+
     .project--lilac .project__picture .slick-next {
         cursor: url('../images/cursor_arrow_next_lilac.svg'), e-resize;
     }
@@ -1247,6 +1278,10 @@ h1 {
 
     .project--blue .project__picture .slick-next {
         cursor: url('../images/cursor_arrow_next_blue.svg'), e-resize;
+    }
+
+    .project--klein-blue .project__picture .slick-next {
+        cursor: url('../images/cursor_arrow_next_kleinblue.svg'), e-resize;
     }
 
     .project--lilac .project__type {
@@ -1269,6 +1304,10 @@ h1 {
         background: var(--blue-color);
     }
 
+    .project--klein-blue .project__type {
+        background: var(--kleinblue-color);
+    }
+
     .project--lilac .stack__block {
         background-image: url('../images/stack_arrow_lilac.svg');
     }
@@ -1287,6 +1326,10 @@ h1 {
 
     .project--blue .stack__block {
         background-image: url('../images/stack_arrow_blue.svg');
+    }
+
+    .project--klein-blue .stack__block {
+        background-image: url('../images/stack_arrow_kleinblue.svg');
     }
 
     .project--lilac .project__link {
@@ -1354,6 +1397,19 @@ h1 {
         background-color: var(--blue-color);
     }
 
+    .project--klein-blue .project__link {
+        border-color: var(--kleinblue-color);
+        color: var(--kleinblue-color);
+    }
+
+    .project--klein-blue .project__link:hover {
+        color: var(--white-color);
+    }
+
+    .project--klein-blue .project__link_hover {
+        background-color: var(--kleinblue-color);
+    }
+
     .follow--lilac {
         background-color: rgba(230, 69, 162, 0.5);
     }
@@ -1372,6 +1428,10 @@ h1 {
 
     .follow--blue {
         background-color: rgba(17, 94, 255, 0.5);
+    }
+
+    .follow--klein-blue {
+        background-color: rgba(51, 114, 191, 0.5);
     }
 
     .project--lilac .slick-dots li button {
@@ -1414,6 +1474,14 @@ h1 {
         background-color: rgba(17, 94, 255, 0.8);
     }
 
+    .project--klein-blue .slick-dots li button {
+        background-color: rgba(51, 114, 191, 0.5);
+    }
+
+    .project--klein-blue .slick-dots li.slick-active button {
+        background-color: rgba(51, 114, 191, 0.8);
+    }
+
     .project--lilac .footer {
         background-color: var(--lilac-color);
     }
@@ -1432,6 +1500,10 @@ h1 {
 
     .project--blue .footer {
         background-color: var(--blue-color);
+    }
+
+    .project--klein-blue .footer {
+        background-color: var(--kleinblue-color);
     }
 
     .menu__text:hover {
