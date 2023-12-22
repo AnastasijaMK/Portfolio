@@ -103,6 +103,9 @@ function checkFollowColor(elementBelow) {
     } else if(elementBelow.classList.contains('project--klein-blue') || elementBelow.closest('.project--klein-blue') ||
         elementBelow.classList.contains('header--klein-blue') || elementBelow.closest('.header--klein-blue')) {
         followBlock.className = 'follow follow--klein-blue';
+    } else if(elementBelow.classList.contains('project--gold') || elementBelow.closest('.project--gold') ||
+        elementBelow.classList.contains('header--gold') || elementBelow.closest('.header--gold')) {
+        followBlock.className = 'follow follow--gold';
     } else if(!elementBelow.classList.contains('follow')) {
         followBlock.className = 'follow';
     }
@@ -150,6 +153,8 @@ function checkHeaderColor(currentSection) {
         document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling header--blue' : 'header header--blue';
     } else if(currentSection.classList.contains('project--klein-blue')) {
         document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling header--klein-blue' : 'header header--klein-blue';
+    } else if(currentSection.classList.contains('project--gold')) {
+        document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling header--gold' : 'header header--gold';
     } else {
         document.querySelector('header').className = document.querySelector('header').classList.contains('header--scrolling') ? 'header header--scrolling' : 'header';
     }

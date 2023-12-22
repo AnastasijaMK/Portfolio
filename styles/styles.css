@@ -149,6 +149,7 @@
     --orchid-color: #A286FB;
     --orange-color: #FF8757;
     --white-color: #FFFFFF;
+    --gold-color: #BE9B64;
 
     --main-color-op10: rgba(73, 67, 67, 0.1);
 }
@@ -1104,6 +1105,10 @@ h1 {
         background-image: linear-gradient(to bottom, var(--kleinblue-color), var(--kleinblue-color) 50%, var(--main-color) 50%);
     }
 
+    .header--gold .menu__text {
+        background-image: linear-gradient(to bottom, var(--gold-color), var(--gold-color) 50%, var(--main-color) 50%);
+    }
+
     .header--lilac .menu__text:before {
         background: var(--lilac-color);
     }
@@ -1126,6 +1131,10 @@ h1 {
 
     .header--klein-blue .menu__text:before {
         background: var(--kleinblue-color);
+    }
+
+    .header--gold .menu__text:before {
+        background: var(--gold-color);
     }
 
     .header--lilac .social__text {
@@ -1152,6 +1161,10 @@ h1 {
         background-image: linear-gradient(to bottom, var(--kleinblue-color), var(--kleinblue-color) 50%, var(--main-color) 50%);
     }
 
+    .header--gold .social__text {
+        background-image: linear-gradient(to bottom, var(--gold-color), var(--gold-color) 50%, var(--main-color) 50%);
+    }
+
     .header--lilac .social__text:before {
         background: var(--lilac-color);
     }
@@ -1174,6 +1187,10 @@ h1 {
 
     .header--klein-blue .social__text:before {
         background: var(--kleinblue-color);
+    }
+
+    .header--gold .social__text:before {
+        background: var(--gold-color);
     }
 
     .project--lilac .scroller {
@@ -1212,6 +1229,12 @@ h1 {
         background-size: 20px;
     }
 
+    .project--gold .scroller {
+        border: 1px solid var(--gold-color);
+        background: url('../images/scroller_arrow_gold.svg') no-repeat center center;
+        background-size: 20px;
+    }
+
     .project--lilac .project__slide a[data-fancybox] {
         cursor: url('../images/cursor_zoom_lilac.svg'), zoom-in;
     }
@@ -1234,6 +1257,10 @@ h1 {
 
     .project--klein-blue .project__slide a[data-fancybox] {
         cursor: url('../images/cursor_zoom_kleinblue.svg'), zoom-in;
+    }
+
+    .project--gold .project__slide a[data-fancybox] {
+        cursor: url('../images/cursor_zoom_gold.svg'), zoom-in;
     }
 
     .project--lilac .project__picture .slick-arrow {
@@ -1260,6 +1287,10 @@ h1 {
         cursor: url('../images/cursor_arrow_prev_kleinblue.svg'), w-resize;
     }
 
+    .project--gold .project__picture .slick-arrow {
+        cursor: url('../images/cursor_arrow_prev_gold.svg'), w-resize;
+    }
+
     .project--lilac .project__picture .slick-next {
         cursor: url('../images/cursor_arrow_next_lilac.svg'), e-resize;
     }
@@ -1282,6 +1313,10 @@ h1 {
 
     .project--klein-blue .project__picture .slick-next {
         cursor: url('../images/cursor_arrow_next_kleinblue.svg'), e-resize;
+    }
+
+    .project--gold .project__picture .slick-next {
+        cursor: url('../images/cursor_arrow_next_gold.svg'), e-resize;
     }
 
     .project--lilac .project__type {
@@ -1308,6 +1343,10 @@ h1 {
         background: var(--kleinblue-color);
     }
 
+    .project--gold .project__type {
+        background: var(--gold-color);
+    }
+
     .project--lilac .stack__block {
         background-image: url('../images/stack_arrow_lilac.svg');
     }
@@ -1330,6 +1369,10 @@ h1 {
 
     .project--klein-blue .stack__block {
         background-image: url('../images/stack_arrow_kleinblue.svg');
+    }
+
+    .project--gold .stack__block {
+        background-image: url('../images/stack_arrow_gold.svg');
     }
 
     .project--lilac .project__link {
@@ -1410,6 +1453,19 @@ h1 {
         background-color: var(--kleinblue-color);
     }
 
+    .project--gold .project__link {
+        border-color: var(--gold-color);
+        color: var(--gold-color);
+    }
+
+    .project--gold .project__link:hover {
+        color: var(--white-color);
+    }
+
+    .project--gold .project__link_hover {
+        background-color: var(--gold-color);
+    }
+
     .follow--lilac {
         background-color: rgba(230, 69, 162, 0.5);
     }
@@ -1432,6 +1488,10 @@ h1 {
 
     .follow--klein-blue {
         background-color: rgba(51, 114, 191, 0.5);
+    }
+
+    .follow--gold {
+        background-color: rgba(190, 155, 100, 0.5);
     }
 
     .project--lilac .slick-dots li button {
@@ -1482,6 +1542,14 @@ h1 {
         background-color: rgba(51, 114, 191, 0.8);
     }
 
+    .project--gold .slick-dots li button {
+        background-color: rgba(190, 155, 100, 0.5);
+    }
+
+    .project--gold .slick-dots li.slick-active button {
+        background-color: rgba(190, 155, 100, 0.8);
+    }
+
     .project--lilac .footer {
         background-color: var(--lilac-color);
     }
@@ -1504,6 +1572,10 @@ h1 {
 
     .project--klein-blue .footer {
         background-color: var(--kleinblue-color);
+    }
+
+    .project--gold .footer {
+        background-color: var(--gold-color);
     }
 
     .menu__text:hover {
