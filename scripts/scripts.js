@@ -9,6 +9,13 @@ window.addEventListener('resize', function(event) {
 }, true);
 
 
+// Установка актуального года
+const yearBlock = document.querySelectorAll('.j-set-year');
+for(let i=0; i<yearBlock?.length; i++) {
+    yearBlock[i].innerText = new Date().getFullYear();
+}
+
+
 $(document).ready(function () {
     // Слайдеры -->
     $(".project__picture").slick({
